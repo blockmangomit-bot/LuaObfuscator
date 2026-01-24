@@ -2,11 +2,9 @@
 -- LUA ENCODER v1.2
 -- Lua Ob v1.2
 -- ========================
-
-info = ("This Version of Lua Ob is Security & Slow")
 version = ("Lua Encoder v1.2")
 credits = ("Credits: Endermite17, Gemini 3")
-
+info = ("This Version is fast but not secure")
 print(version)
 print(info)
 print(credits)
@@ -18,10 +16,9 @@ local function fast_encode(text)
 end
 
 --put your source code here
+--IMPORTANT: YOU MUST DELETE ALL SYMBOL [[ AND ]] IN YOUR SCRIPT TO MAKE IT WORK
 local source = [[ 
-
-
-
+print("hello, world")
 ]]
 
 -- convert 
@@ -39,4 +36,5 @@ for i = 1, #final_result, chunk_size do
     -- print in chunks to avoid crash
     print(final_result:sub(i, i + chunk_size - 1))
 end
+
 print("Thanks for using Lua Ob v1.2")
