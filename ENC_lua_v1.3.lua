@@ -1,6 +1,6 @@
 ﻿-- ========================
--- LUA ENCODER v1.2
--- Lua Ob v1.2
+-- LUA ENCODER v1.3
+-- Lua Ob v1.3
 -- ========================
 
 info = ("This Version of Lua Ob is fixed new line error")
@@ -18,6 +18,7 @@ local function fast_encode(text)
 end
 
 --put your source code here
+--IMPORTANT: YOU MUST DELETE ALL SYMBOL [[ AND ]] IN YOUR SCRIPT TO MAKE IT WORK
 local source = [[
 print("hello,world")
 ]]
@@ -37,4 +38,5 @@ for i = 1, #final_result, chunk_size do
     -- print in chunks
     print(final_result:sub(i, i + chunk_size - 1))
 end
+
 print("Thanks for using Lua Ob v1.2")
