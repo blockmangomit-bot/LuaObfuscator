@@ -39,4 +39,5 @@ for i = 1, #final_result, chunk_size do
     print(final_result:sub(i, i + chunk_size - 1))
 end
 
-print("Thanks for using Lua Ob v1.2")
+print("Thanks for using Lua Ob v1.3")
+
